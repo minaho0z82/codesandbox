@@ -35,7 +35,27 @@
 // val4.addres = "Japaaan";
 // console.log(val4);
 //constで定義した配列はプロパティの変更が可能
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey");
-console.log(val5);
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey");
+// console.log(val5);
+
+/*
+ * mapやFilterを使った配列の処理
+ */
+const nameArr = ["田中", "山田", "じゃけえ"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
+// }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newNumArr);
